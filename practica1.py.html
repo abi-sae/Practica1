@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>practica1.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #629755; font-style: italic;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+.s5 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+practica1.py</font>
+</center></td></tr></table>
+<pre><span class="s0">&quot;&quot;&quot; 
+Calcular el impuesto sobre la renta (ISR) anual de una persona. 
+ 
+Los datos de entrada son: 
+Sueldo bruto anual (s) y número de dependientes (d). 
+ 
+Requerimientos: 
+1. A todos los contribuyentes se les permite una deducción estándar de $10,000. 
+2. A todos los contribuyentes se les cobra una tasa de impuestos fija del 20%. 
+3. Por cada dependiente, al contribuyente se le permite una deducción adicional de $2,000. 
+4. El sueldo bruto debe ingresarse al centavo más cercano. 
+5. El ISR se expresa como un número decimal. 
+ 
+ 
+Calculos 
+ISR=(Sueldo bruto -(Número de dependientes*2000))*0.20 
+ 
+Datos de salida 
+Total a pagar de ISR 
+ 
+Nota: Si se introduce algún número de acuerdo al salario bruto menor a 10000, el programa aún así realizara las funciones que tiene, 
+sin embargo el resultado no es verdadero, pues se necesitan minimo 10000 para que de datos correctos. 
+ 
+&quot;&quot;&quot;</span>
+<span class="s2">#Se piden los datos de entrada.</span>
+<span class="s1">Sueldo=float(input(</span><span class="s3">&quot;Introduce el sueldo burto anual:&quot;</span><span class="s1">))</span>
+<span class="s1">Dependientes=float(input(</span><span class="s3">&quot;Introduce el número de dependientes:&quot;</span><span class="s1">))</span>
+
+<span class="s2">#Se realizan los calculos correspondientes de acuerdo a los datos recolectados.</span>
+<span class="s1">ISR=(Sueldo-(Dependientes*</span><span class="s4">2000</span><span class="s1">))*</span><span class="s4">0.20</span>
+
+<span class="s2">#Aquí se utiliza el comando para redondear los decimales, que se tenga los 2 mas cercanos.</span>
+<span class="s1">isr= round(ISR</span><span class="s5">,</span><span class="s4">2</span><span class="s1">)</span>
+
+<span class="s2">#Se despliegan los resultados.</span>
+<span class="s1">print(</span><span class="s3">&quot;El total a pagar de el impuesto sobre la renta: es&quot;</span><span class="s5">,</span><span class="s1">isr</span><span class="s5">, </span><span class="s1">)</span>
+
+
+
+<span class="s1">print(</span><span class="s3">&quot;Nombre del alumno:  Abigail Sanchez Lopez&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Matrícula: 2223068506&quot;</span><span class="s1">)</span>
+</pre>
+</body>
+</html>
